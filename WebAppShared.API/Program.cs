@@ -1,4 +1,6 @@
 
+using WebAppSharedClassLib;
+
 namespace WebAppShared.API
 {
     public class Program
@@ -8,6 +10,8 @@ namespace WebAppShared.API
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
+            builder.Services.AddSingleton<Calculator>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi

@@ -13,6 +13,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["WebAppShared.API/WebAppShared.API.csproj", "WebAppShared.API/"]
+COPY ["Shared/WebAppSharedClassLib/WebAppSharedClassLib.csproj", "Shared/WebAppSharedClassLib/"]
 RUN dotnet restore "./WebAppShared.API/WebAppShared.API.csproj"
 COPY . .
 WORKDIR "/src/WebAppShared.API"

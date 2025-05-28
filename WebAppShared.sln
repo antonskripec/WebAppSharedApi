@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36119.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppShared.API", "WebAppShared.API\WebAppShared.API.csproj", "{1F5006F0-B792-4984-ABA7-40CD7FFD0116}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppSharedClassLib", "Shared\WebAppSharedClassLib\WebAppSharedClassLib.csproj", "{F5138207-02E8-79D9-A617-7B6BFDBDAF4E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1F5006F0-B792-4984-ABA7-40CD7FFD0116}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F5006F0-B792-4984-ABA7-40CD7FFD0116}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F5006F0-B792-4984-ABA7-40CD7FFD0116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5138207-02E8-79D9-A617-7B6BFDBDAF4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5138207-02E8-79D9-A617-7B6BFDBDAF4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5138207-02E8-79D9-A617-7B6BFDBDAF4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5138207-02E8-79D9-A617-7B6BFDBDAF4E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
