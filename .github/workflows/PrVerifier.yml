@@ -17,10 +17,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code (with submodules)
+      - name: Checkout code (with submodules and token)
         uses: actions/checkout@v4
         with:
           submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup .NET 9
         uses: actions/setup-dotnet@v4
