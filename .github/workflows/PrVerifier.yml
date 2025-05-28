@@ -20,7 +20,7 @@ jobs:
       - name: Checkout code with submodules
         uses: actions/checkout@v4
         with:
-          submodules: recursive
+          submodules: true
           ssh-key: ${{ secrets.SUBMODULE_SSH_KEY }}
 
       - name: Setup .NET 9
