@@ -22,7 +22,7 @@ jobs:
         with:
           ref: develop
           submodules: true
-          token: ${{ secrets.SUBMODULE_CONTENT_PULL_KEY }}
+          ssh_key: ${{ secrets.SUBMODULE_CONTENT_PULL_KEY }}
 
       - name: Setup .NET 9
         uses: actions/setup-dotnet@v4
