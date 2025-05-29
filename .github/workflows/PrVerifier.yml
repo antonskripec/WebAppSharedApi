@@ -20,8 +20,9 @@ jobs:
       - name: Checkout code with submodules
         uses: actions/checkout@v4
         with:
-          submodules: 'recursive'
-          ssh-key: ${{ secrets.SUBMODULE_CONTENT_PULL_KEY }}
+          ref: develop
+          submodules: true
+          token: ${{ secrets.SUBMODULE_CONTENT_PULL_KEY }}
 
       - name: Setup .NET 9
         uses: actions/setup-dotnet@v4
